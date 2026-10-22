@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chromafit — Tu guardarropa ideal</title>
+    <title>Chromafit — Del tablero de inspiración a tu guardarropa ideal en segundos</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
@@ -13,14 +13,17 @@
     <header class="navbar">
         <div class="container nav-container">
             <div class="logo">
-                <img src="images/logo1.jfif" alt="Chromafit Logo" style="height: 40px;">
+                <img src="images/logo1.jfif" alt="Chromafit Logo" style="height: 36px; border-radius: 8px;">
                 <span>Chromafit</span>
             </div>
             <nav class="nav-links">
                 <a href="#servicios" class="nav-link">Servicios</a>
-                <a href="#ia" class="nav-link">Nuestra IA</a>
-                <a href="#contacto" class="nav-link">Dónde Estamos</a>
+                <a href="#paletas" class="nav-link">Paletas</a>
+                <a href="#testimonios" class="nav-link">Testimonios</a>
+                <a href="#nosotros" class="nav-link">Nosotros</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
             </nav>
+            <a href="#contacto" class="btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Analiza tu color</a>
         </div>
     </header>
 
@@ -34,11 +37,46 @@
                 <p class="hero-desc">Analizamos tu colorimetría para ayudarte a escoger la ropa que mejor combine contigo, creando un puente directo entre la inspiración digital y la compra real.</p>
                 <div class="hero-buttons">
                     <a href="#servicios" class="btn-primary">Ver Servicios</a>
-                    <a href="#contacto" class="btn-secondary">Contáctanos</a>
+                    <a href="#paletas" class="btn-secondary">Explorar Paletas</a>
                 </div>
             </div>
             <div class="hero-visual-container">
-                <img src="images/hero_visual.jfif" alt="Hero Visual" class="hero-img glow-primary">
+                <img src="images/hero_visual.jfif" alt="Hero Visual" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- MÉTRICAS Y TIENDAS ALIADAS -->
+    <section class="metrics-section" style="padding: 80px 0; background: var(--bg-secondary); border-top: 1px solid rgba(246,239,234,0.1); border-bottom: 1px solid rgba(246,239,234,0.1);">
+        <div class="container">
+            <div class="metrics-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; text-align: center; margin-bottom: 50px;">
+                <div>
+                    <h3 style="font-size: 2.5rem; color: var(--primary-500); font-weight: 800;">+2.500</h3>
+                    <p style="color: var(--text-tertiary); font-size: 0.9rem;">análisis de colorimetría</p>
+                </div>
+                <div>
+                    <h3 style="font-size: 2.5rem; color: var(--primary-500); font-weight: 800;">+40</h3>
+                    <p style="color: var(--text-tertiary); font-size: 0.9rem;">tiendas locales vinculadas</p>
+                </div>
+                <div>
+                    <h3 style="font-size: 2.5rem; color: var(--primary-500); font-weight: 800;">+18.000</h3>
+                    <p style="color: var(--text-tertiary); font-size: 0.9rem;">prendas en catálogo</p>
+                </div>
+                <div>
+                    <h3 style="font-size: 2.5rem; color: var(--primary-500); font-weight: 800;">94%</h3>
+                    <p style="color: var(--text-tertiary); font-size: 0.9rem;">precisión en subtono</p>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <p style="color: var(--primary-500); font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 20px; font-weight: 600;">Tiendas aliadas en el Gran Concepción</p>
+                <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; color: var(--text-secondary); font-size: 0.95rem;">
+                    <span>• Biobío Atelier</span>
+                    <span>• Casa Lienzo</span>
+                    <span>• Paseo Tela</span>
+                    <span>• Ropero Sur</span>
+                    <span>• Hilo Penco</span>
+                </div>
+                <p style="color: rgba(255,255,255,0.3); font-size: 0.75rem; margin-top: 15px;">Cifras y tiendas de ejemplo para este ejercicio académico.</p>
             </div>
         </div>
     </section>
@@ -92,7 +130,7 @@
                         </div>
                         <div class="service-card-back glass-card">
                             <h3 class="service-title-back">Análisis de colorimetría personalizada</h3>
-                            <p class="service-description">Descubre qué paleta de colores realza tu belleza natural según tu tono de piel, ojos y cabello.</p>
+                            <p class="service-description">Descubre qué paleta de colores realza tu belleza natural según tu tono de piel y cabello.</p>
                         </div>
                     </div>
                 </div>
@@ -107,7 +145,7 @@
                         </div>
                         <div class="service-card-back glass-card">
                             <h3 class="service-title-back">Recomendaciones personalizadas de estilo</h3>
-                            <p class="service-description">Sugerencias de outfits diarios adaptados a tu tipo de cuerpo, estilo de vida y preferencias.</p>
+                            <p class="service-description">Sugerencias de outfits diarios adaptados a tu tipo de cuerpo y estilo de vida.</p>
                         </div>
                     </div>
                 </div>
@@ -130,7 +168,7 @@
                 <div class="service-card-flip">
                     <div class="service-card-inner">
                         <div class="service-card-front">
-                            <img src="images/service_6.jfif" alt="Producto de armario digital" class="service-image">
+                            <img src="images/service_5.jfif" alt="Producto de armario digital" class="service-image">
                             <div class="service-overlay">
                                 <h3 class="service-title-front">Producto de armario digital</h3>
                             </div>
@@ -145,28 +183,256 @@
         </div>
     </section>
 
-    <!-- SECCIÓN DÓNDE ESTAMOS (MAPA CORRECTO - CONCEPCIÓN) -->
-    <section class="map-section" id="contacto">
+    <!-- PORTAFOLIO DE PALETAS (CUATRO ESTACIONES) -->
+    <section class="palettes-section" id="paletas" style="padding: 100px 0; background: var(--bg-primary);">
         <div class="container">
-            <div class="section-header">
-                <h2>Dónde Estamos</h2>
-                <p>Visítanos y descubre nuestra experiencia presencial de asesoría y colorimetría en Concepción.</p>
+            <div style="margin-bottom: 50px;">
+                <p style="color: var(--primary-500); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; margin-bottom: 10px;">Portafolio de paletas</p>
+                <h2 style="font-size: 2.8rem; margin-bottom: 15px;">Cuatro estaciones, doce paletas</h2>
+                <p style="color: var(--text-tertiary); max-width: 600px;">Cada estación se divide en tres según el rasgo dominante. Estas son las paletas base con las que trabaja nuestro análisis.</p>
             </div>
-            <div class="map-grid glass-card">
-                <div class="map-info">
-                    <h3>Chromafit Studio</h3>
-                    <p><strong>Dirección:</strong> Ainavillo 456, Concepción, Chile</p>
-                    <p><strong>Horario:</strong> Lunes a Viernes de 10:00 a 19:00 hrs.</p>
-                    <a href="https://maps.google.com/?q=Ainavillo+456,+Concepcion,+Chile" target="_blank" class="btn-primary" style="margin-top: 20px; display: inline-block;">Cómo llegar</a>
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+                <div class="glass-card" style="padding: 24px;">
+                    <div style="height: 60px; border-radius: 12px; background: linear-gradient(90deg, #E27B58, #E59866, #F1C40F, #A9DFBF, #F5EEF0); margin-bottom: 20px;"></div>
+                    <h3 style="font-size: 1.4rem; margin-bottom: 15px;">Primavera</h3>
+                    <div style="display: flex; justify-content: space-between; font-size: 0.85rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; margin-bottom: 8px; color: var(--text-tertiary);">
+                        <span>Subtono</span> <strong style="color: #fff;">Cálido</strong>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-tertiary);">
+                        <span>Intensidad</span> <strong style="color: #fff;">Brillante</strong>
+                    </div>
                 </div>
-                <div class="map-container-frame">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.234!2d-73.0498!3d-36.8270!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDA5JzM3LjIiUyA3M8KwMDInNTkuMyJX!5e0!3m2!1ses!2scl!4v1600000000000!5m2!1ses!2scl" width="100%" height="100%" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="glass-card" style="padding: 24px;">
+                    <div style="height: 60px; border-radius: 12px; background: linear-gradient(90deg, #B3B3D9, #A9CCE3, #D98880, #AEB6BF, #85929E); margin-bottom: 20px;"></div>
+                    <h3 style="font-size: 1.4rem; margin-bottom: 15px;">Verano</h3>
+                    <div style="display: flex; justify-content: space-between; font-size: 0.85rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; margin-bottom: 8px; color: var(--text-tertiary);">
+                        <span>Subtono</span> <strong style="color: #fff;">Frío</strong>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-tertiary);">
+                        <span>Intensidad</span> <strong style="color: #fff;">Suave</strong>
+                    </div>
+                </div>
+                <div class="glass-card" style="padding: 24px;">
+                    <div style="height: 60px; border-radius: 12px; background: linear-gradient(90deg, #D35400, #B9770E, #7D6608, #D4AC0D, #78281F); margin-bottom: 20px;"></div>
+                    <h3 style="font-size: 1.4rem; margin-bottom: 15px;">Otoño</h3>
+                    <div style="display: flex; justify-content: space-between; font-size: 0.85rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; margin-bottom: 8px; color: var(--text-tertiary);">
+                        <span>Subtono</span> <strong style="color: #fff;">Cálido</strong>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-tertiary);">
+                        <span>Intensidad</span> <strong style="color: #fff;">Apagada</strong>
+                    </div>
+                </div>
+                <div class="glass-card" style="padding: 24px;">
+                    <div style="height: 60px; border-radius: 12px; background: linear-gradient(90deg, #1B2631, #2471A3, #6C3483, #EAEDED, #C0392B); margin-bottom: 20px;"></div>
+                    <h3 style="font-size: 1.4rem; margin-bottom: 15px;">Invierno</h3>
+                    <div style="display: flex; justify-content: space-between; font-size: 0.85rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; margin-bottom: 8px; color: var(--text-tertiary);">
+                        <span>Subtono</span> <strong style="color: #fff;">Frío</strong>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-tertiary);">
+                        <span>Intensidad</span> <strong style="color: #fff;">Brillante</strong>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CHAT FLOTANTE INTERACTIVO -->
+    <!-- CÓMO FUNCIONA -->
+    <section style="padding: 100px 0; background: var(--bg-secondary);">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 50px;">Cómo funciona</h2>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                <div class="glass-card">
+                    <div style="width: 40px; height: 40px; background: var(--primary-500); color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-bottom: 20px;">1</div>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 10px;">Sube tu selfie</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">Con luz natural, sin maquillaje y sin filtros. Tarda menos de un minuto.</p>
+                </div>
+                <div class="glass-card">
+                    <div style="width: 40px; height: 40px; background: var(--primary-500); color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-bottom: 20px;">2</div>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 10px;">Recibe tu estación</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">El modelo mide subtono, contraste e intensidad y genera tu paleta personal.</p>
+                </div>
+                <div class="glass-card">
+                    <div style="width: 40px; height: 40px; background: var(--primary-500); color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-bottom: 20px;">3</div>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 10px;">Compra con tu color</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">Ves prendas de tiendas locales que calzan con tu paleta y lo que ya tienes en tu armario.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section id="testimonios" style="padding: 100px 0; background: var(--bg-primary);">
+        <div class="container">
+            <p style="color: var(--primary-500); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; margin-bottom: 10px;">Testimonios</p>
+            <h2 style="font-size: 2.8rem; margin-bottom: 10px;">Lo que cambia cuando vistes tu color</h2>
+            <p style="color: var(--text-tertiary); margin-bottom: 50px;">Testimonios de ejemplo para este ejercicio académico.</p>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                <div class="glass-card">
+                    <p style="color: var(--primary-500); margin-bottom: 15px;">★★★★★</p>
+                    <p style="color: var(--text-secondary); margin-bottom: 25px; line-height: 1.6;">"Descubrí que soy Otoño profundo. Dejé de comprar negro para todo y ahora mi ropa de oficina combina sola."</p>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="width: 40px; height: 40px; background: rgba(246,239,234,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: var(--primary-500);">CM</div>
+                        <div>
+                            <strong style="display: block; font-size: 0.95rem;">Camila M.</strong>
+                            <span style="color: var(--text-tertiary); font-size: 0.8rem;">Ingeniera, Concepción</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card">
+                    <p style="color: var(--primary-500); margin-bottom: 15px;">★★★★★</p>
+                    <p style="color: var(--text-secondary); margin-bottom: 25px; line-height: 1.6;">"El armario digital me mostró veinte combinaciones con prendas que ya tenía. Este mes no compré nada y me vestí mejor."</p>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="width: 40px; height: 40px; background: rgba(246,239,234,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: var(--primary-500);">JR</div>
+                        <div>
+                            <strong style="display: block; font-size: 0.95rem;">Javiera R.</strong>
+                            <span style="color: var(--text-tertiary); font-size: 0.8rem;">Estudiante, Talcahuano</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card">
+                    <p style="color: var(--primary-500); margin-bottom: 15px;">★★★★★</p>
+                    <p style="color: var(--text-secondary); margin-bottom: 25px; line-height: 1.6;">"La asesoría virtual con draping en vivo fue clave. Ahora sé qué tonos usar en reuniones por cámara."</p>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="width: 40px; height: 40px; background: rgba(246,239,234,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: var(--primary-500);">DP</div>
+                        <div>
+                            <strong style="display: block; font-size: 0.95rem;">Diego P.</strong>
+                            <span style="color: var(--text-tertiary); font-size: 0.8rem;">Abogado, San Pedro de la Paz</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GUÍA DE COLOR Y BLOG -->
+    <section style="padding: 100px 0; background: var(--bg-secondary);">
+        <div class="container">
+            <p style="color: var(--primary-500); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; margin-bottom: 10px;">Guía de color</p>
+            <h2 style="font-size: 2.8rem; margin-bottom: 50px;">Aprende a leer tu propio color</h2>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                <div class="glass-card">
+                    <span style="color: var(--primary-500); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600;">Subtono</span>
+                    <h3 style="font-size: 1.25rem; margin: 10px 0 15px;">La prueba de las venas y por qué no basta</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 25px;">Qué miran de verdad los asesores de imagen para distinguir un subtono cálido de uno frío.</p>
+                    <span style="color: var(--text-tertiary); font-size: 0.85rem;">Lectura de 4 min</span>
+                </div>
+                <div class="glass-card">
+                    <span style="color: var(--primary-500); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600;">Armario</span>
+                    <h3 style="font-size: 1.25rem; margin: 10px 0 15px;">Cinco neutros que reemplazan al negro</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 25px;">Camel, marfil, petróleo, gris perla y chocolate: cuál le sirve a cada estación.</p>
+                    <span style="color: var(--text-tertiary); font-size: 0.85rem;">Lectura de 6 min</span>
+                </div>
+                <div class="glass-card">
+                    <span style="color: var(--primary-500); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600;">Compras</span>
+                    <h3 style="font-size: 1.25rem; margin: 10px 0 15px;">Cómo usar tu paleta en una tienda física</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 25px;">Una rutina de tres pasos para decidir frente al espejo del probador.</p>
+                    <span style="color: var(--text-tertiary); font-size: 0.85rem;">Lectura de 3 min</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE CHROMAFIT -->
+    <section id="nosotros" style="padding: 100px 0; background: var(--bg-primary);">
+        <div class="container hero-grid" style="align-items: center;">
+            <div>
+                <img src="images/hero_visual.jfif" alt="Sobre Chromafit" style="width: 100%; border-radius: 24px; border: 1px solid rgba(246,239,234,0.2);">
+            </div>
+            <div>
+                <p style="color: var(--primary-500); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; margin-bottom: 10px;">Sobre Chromafit</p>
+                <h2 style="font-size: 2.8rem; margin-bottom: 25px;">Nacimos en Concepción, frente al espejo del probador</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 20px; line-height: 1.7;">Chromafit partió de una frustración común: guardar cientos de looks en Pinterest y no saber cuáles nos quedan bien. La colorimetría tenía la respuesta, pero una asesoría presencial era cara y difícil de agendar.</p>
+                <p style="color: var(--text-secondary); margin-bottom: 30px; line-height: 1.7;">Por eso juntamos asesoría de imagen y aprendizaje automático en una app. Lee tu color, entiende tu inspiración y te lleva a prendas reales de tiendas cercanas.</p>
+                <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                    <span style="background: rgba(246,239,234,0.06); border: 1px solid rgba(246,239,234,0.2); padding: 8px 16px; border-radius: 20px; font-size: 0.85rem;">Color con base técnica</span>
+                    <span style="background: rgba(246,239,234,0.06); border: 1px solid rgba(246,239,234,0.2); padding: 8px 16px; border-radius: 20px; font-size: 0.85rem;">Comercio local</span>
+                    <span style="background: rgba(246,239,234,0.06); border: 1px solid rgba(246,239,234,0.2); padding: 8px 16px; border-radius: 20px; font-size: 0.85rem;">Compra consciente</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO Y FORMULARIO -->
+    <section id="contacto" style="padding: 100px 0; background: var(--bg-secondary);">
+        <div class="container hero-grid" style="align-items: center;">
+            <div>
+                <h2 style="font-size: 3rem; margin-bottom: 20px;">¿Cuál es tu estación de color?</h2>
+                <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 30px;">Deja tus datos y te avisamos cuando abra la beta de la app. Las primeras 300 personas reciben su análisis completo sin costo.</p>
+                <div style="margin-top: 30px;">
+                    <p style="color: var(--primary-500); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; margin-bottom: 8px;">Dirección</p>
+                    <p style="color: var(--text-secondary);">Ainavillo 456, Concepción, Chile</p>
+                </div>
+            </div>
+            <div class="glass-card" style="padding: 40px;">
+                <form onsubmit="event.preventDefault(); alert('¡Gracias por registrarte en Chromafit!');" style="display: flex; flexDirection: column; gap: 20px;">
+                    <div style="margin-bottom: 15px;">
+                        <label style="display: block; font-size: 0.85rem; color: var(--text-tertiary); margin-bottom: 8px;">Nombre</label>
+                        <input type="text" placeholder="Tu nombre" required style="width: 100%; padding: 14px; background: rgba(0,0,0,0.5); border: 1px solid rgba(246,239,234,0.2); border-radius: 10px; color: #fff; font-size: 0.95rem;">
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <label style="display: block; font-size: 0.85rem; color: var(--text-tertiary); margin-bottom: 8px;">Correo</label>
+                        <input type="email" placeholder="tu@correo.cl" required style="width: 100%; padding: 14px; background: rgba(0,0,0,0.5); border: 1px solid rgba(246,239,234,0.2); border-radius: 10px; color: #fff; font-size: 0.95rem;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; font-size: 0.85rem; color: var(--text-tertiary); margin-bottom: 8px;">¿Qué te interesa?</label>
+                        <select style="width: 100%; padding: 14px; background: rgba(0,0,0,0.5); border: 1px solid rgba(246,239,234,0.2); border-radius: 10px; color: #fff; font-size: 0.95rem;">
+                            <option>Análisis de colorimetría personalizada</option>
+                            <option>App de Machine Learning</option>
+                            <option>Catálogos locales</option>
+                            <option>Armario digital</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%; text-align: center; cursor: pointer; border: none;">Quiero mi análisis</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" style="padding: 80px 0 40px; background: var(--bg-primary); border-top: 1px solid rgba(246,239,234,0.1);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 60px;">
+                <div>
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <img src="images/logo.jpg" alt="Logo" style="height: 32px; border-radius: 6px;">
+                        <strong style="font-size: 1.2rem;">Chromafit</strong>
+                    </div>
+                    <p style="color: var(--text-tertiary); font-size: 0.9rem; max-width: 300px;">Del tablero de inspiración a tu guardarropa ideal en segundos.</p>
+                </div>
+                <div>
+                    <strong style="display: block; color: #fff; margin-bottom: 20px; font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase;">Servicios</strong>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; color: var(--text-tertiary); font-size: 0.9rem;">
+                        <li>App machine learning</li>
+                        <li>Análisis de colorimetría</li>
+                        <li>Asesoría de imagen virtual</li>
+                        <li>Armario digital</li>
+                    </ul>
+                </div>
+                <div>
+                    <strong style="display: block; color: #fff; margin-bottom: 20px; font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase;">Recursos</strong>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; color: var(--text-tertiary); font-size: 0.9rem;">
+                        <li>Paletas por estación</li>
+                        <li>Cómo funciona</li>
+                        <li>Guía de color</li>
+                    </ul>
+                </div>
+                <div>
+                    <strong style="display: block; color: #fff; margin-bottom: 20px; font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase;">Empresa</strong>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; color: var(--text-tertiary); font-size: 0.9rem;">
+                        <li>Sobre Chromafit</li>
+                        <li>Contacto</li>
+                        <li>Términos y privacidad</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(246,239,234,0.1); padding-top: 30px; color: var(--text-tertiary); font-size: 0.85rem;">
+                <p>© 2026 Chromafit. Todos los derechos reservados.</p>
+                <p>Ainavillo 456, Concepción, Chile</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CHAT FLOTANTE -->
     <div class="chat-widget-wrapper">
         <button class="chat-toggle-btn" id="chatToggle" aria-label="Abrir chat">💬</button>
         <div class="chat-box glass-card" id="chatBox" style="display: none;">
@@ -185,13 +451,6 @@
             </div>
         </div>
     </div>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <p>© 2026 Chromafit. Todos los derechos reservados.</p>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
