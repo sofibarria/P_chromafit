@@ -423,3 +423,25 @@ h1, h2, h3 {
         display: none;
     }
 }
+/* Estilos para la sección del mapa */
+.map-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    align-items: center;
+}
+.map-info h3 {
+    color: var(--primary-500, #F6EFEA);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.map-info p {
+    color: var(--text-secondary, #E4E4E7);
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+}
+@media (max-width: 968px) {
+    .map-grid {
+        grid-template-columns: 1fr;
+    }
+}
